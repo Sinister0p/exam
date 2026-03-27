@@ -10,14 +10,12 @@ public class ArmstrongCheck {
         int originalNum = num;
         int sum = 0;
         
-        // Loop to process each digit
         while (num > 0) {
-            int digit = num % 10;           // Get the last digit
-            sum = sum + (digit * digit * digit); // Cube the digit and add to sum
-            num = num / 10;                // Remove the last digit
+            int digit = num % 10;           
+            sum = sum + (digit * digit * digit); 
+            num = num / 10;                
         }
         
-        // Final check
         if (sum == originalNum) {
             System.out.println(originalNum + " is an Armstrong number.");
         } else {
