@@ -7,17 +7,15 @@ public class PalindromeCheck {
         System.out.print("Enter a number: ");
         int num = sc.nextInt();
         
-        int originalNum = num; // Store original value to compare later
+        int originalNum = num; 
         int reversedNum = 0;
         
-        // Logic to reverse the number
         while (num > 0) {
-            int digit = num % 10;           // Get the last digit
-            reversedNum = (reversedNum * 10) + digit; // Build the reversed number
-            num = num / 10;                // Remove the last digit
+            int digit = num % 10;           
+            reversedNum = (reversedNum * 10) + digit; 
+            num = num / 10;                
         }
         
-        // Comparison
         if (originalNum == reversedNum) {
             System.out.println(originalNum + " is a Palindrome.");
         } else {
