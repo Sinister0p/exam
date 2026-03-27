@@ -15,10 +15,8 @@ public class FibonacciSeries {
         for (int i = 1; i <= count; i++) {
             System.out.print(firstTerm + " ");
 
-            // Calculate the next term
             int nextTerm = firstTerm + secondTerm;
             
-            // Shift values for the next iteration
             firstTerm = secondTerm;
             secondTerm = nextTerm;
         }
